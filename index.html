@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BookHub</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./logo.jpeg" alt="Logo">
+                <h1>BookHub</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ee.html">Electrical Engineering</a></li>
+                <li><a href="cs.html">Computer Science</a></li>
+                <li><a href="se.html">Software Engineering</a></li>
+                <li><a href="ds.html">Data Science</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to StudyBookHub</h1>
+            <p>Your One Stop Source for Academic Excellence</p>
+            <a href="index.html" class="cta-button">Explore Books</a>
+        </div>
+    </section>
+
+    <!-- Department Highlights Section -->
+<section class="department-highlights">
+    <h2>Departments in SEECS</h2>
+    <div class="department-card">
+        <img src="./seecs.jpeg" alt="Electrical Engineering Department">
+        <div class="department-info">
+            <h3>Electrical Engineering</h3>
+            <p>Unleash the power of electronics and electrical systems.</p>
+            <a href="https://seecs.nust.edu.pk/departments/department-of-electrical-engineering/" class="cta-button">Explore</a>
+        </div>
+    </div>
+    <div class="department-card">
+        <img src="./seecs.jpeg" alt="Computer Science Department">
+        <div class="department-info">
+            <h3>Computer Science</h3>
+            <p>Discover the world of algorithms, programming, and innovation.</p>
+            <a href="https://seecs.nust.edu.pk/departments/department-of-computing/" class="cta-button">Explore</a>
+        </div>
+    </div>
+    <div class="department-card">
+        <img src="./seecs.jpeg" alt="Software Engineering Department">
+        <div class="department-info">
+            <h3>Software Engineering</h3>
+            <p>Shape the digital world through software development.</p>
+            <a href="https://seecs.nust.edu.pk/departments/department-of-software-engineering/" class="cta-button">Explore</a>
+        </div>
+    </div>
+    <div class="department-card">
+        <img src="./seecs.jpeg" alt="Data Science Department">
+        <div class="department-info">
+            <h3>Data Science</h3>
+            <p>Uncover insights from data and drive data-driven decisions.</p>
+            <a href="https://seecs.nust.edu.pk/departments/department-of-computing/" class="cta-button">Explore</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="newsletter">
+    <h2>Subscribe for Updates</h2>
+    <p>Stay updated with the latest books and resources.</p>
+    <form id="signup-form">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="./logo.jpeg" alt="Footer Logo">
+            <h3>BookHub</h3>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="pp.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 BookHub. All rights reserved.</p>
+    </div>
+</footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

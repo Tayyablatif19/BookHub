@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BookHub</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./logo.jpeg" alt="Logo">
+                <h1>BookHub</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ee.html">Electrical Engineering</a></li>
+                <li><a href="cs.html">Computer Science</a></li>
+                <li><a href="se.html">Software Engineering</a></li>
+                <li><a href="ds.html">Data Science</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Electrical Engineering Department</h1>
+            <p>Explore the world of electrical engineering and power your future.</p>
+            <a href="#semester-boxes" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="semester-boxes">
+        <div class="semester-box" onclick="navigateToSemesteree(1)">
+            <h2>Semester 1</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(2)">
+            <h2>Semester 2</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(3)">
+            <h2>Semester 3</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(4)">
+            <h2>Semester 4</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(5)">
+            <h2>Semester 5</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(6)">
+            <h2>Semester 6</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(7)">
+            <h2>Semester 7</h2>
+            <button>Access</button>
+        </div>
+        <div class="semester-box" onclick="navigateToSemesteree(8)">
+            <h2>Semester 8</h2>
+            <button>Access</button>
+        </div>
+    </section>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,595 @@
+/* Default styles for the navigation bar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: darkgrey; */
+    /* color: white; */
+}
+
+header {
+    background-color: #1f1e1e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6600;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+/* Add this CSS to your style.css file */
+.hero {
+    background-image: url('./blackhero.jpeg'); /* Replace 'hero-image.jpg' with your hero image path */
+    background-size: cover;
+    background-position: center;
+    color: #ff6600;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600; /* Your call-to-action button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #dd5500; /* Hover color */
+}
+
+/* Add this CSS to your style.css file */
+
+/* Common styles for department highlights */
+.department-highlights {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.department-highlights h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.department-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.department-card:hover {
+    transform: translateY(-10px);
+}
+
+.department-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.department-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.department-info p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600; /* Your button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #dd5500; 
+}
+
+/* Responsive styles for smaller screens (e.g., tablets and mobile devices) */
+@media (max-width: 768px) {
+    .department-card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .department-card:hover {
+        transform: none; 
+    }
+
+    .department-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .department-info p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add this CSS to your style.css file */
+
+/* Common styles for the newsletter section */
+/* Add this CSS to your style.css file */
+
+/* Newsletter Section Styles */
+.newsletter {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Signup Form Styles */
+#signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#email {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+#email::placeholder {
+    color: #999;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff6600; /* Your button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #dd5500; /* Hover color */
+}
+
+/* Contact Card Styles */
+.contact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #ff6600; /* Your link color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: #dd5500; /* Hover color */
+}
+
+
+/* Add this CSS to your style.css file */
+
+/* Footer styles */
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6600; /* Hover color */
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('./blackhero.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #dd5500;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Semester Box Styles */
+.semester-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.semester-box {
+    width: calc(33.33% - 20px);
+    background-color: #eaeaea;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.semester-box:hover {
+    background-color: #ddd;
+}
+
+.semester-box h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.semester-box button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.semester-box button:hover {
+    background-color: #dd5500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .semester-box {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Add this CSS to your style.css file */
+
+/* Subject Content Styles */
+.subject-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.subject-content h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #dd5500;
+}
+
+.book-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.book-card p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #dd5500;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Privacy Policy Page Styles */
+.privacy-policy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.privacy-policy h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.privacy-policy h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.privacy-policy p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.privacy-policy ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.privacy-policy a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles (You can use these styles for the footer as well) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
