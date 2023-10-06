@@ -94,3 +94,33 @@ function navigateToSemesterds(semesterNumber) {
         window.location.href = url; // Navigate to the selected semester page
     }
 }
+
+// JavaScript code for search functionality
+function searchContent() {
+    const query = document.getElementById("search-input").value.toLowerCase();
+    const resultsContainer = document.querySelector(".search-results");
+    resultsContainer.innerHTML = "";
+
+    // You can replace this with your actual content to search through
+    const contentToSearch = [
+        "Microelectronic_Circuits_by_Sedra_Smith",
+        "Electrical Machinery Fundamentals 5th Ed",
+        "PROBABILITY AND STATISTICS",
+        "ut labore et dolore magna aliqua",
+        "Ut enim ad minim veniam",
+        "quis nostrud exercitation ullamco",
+        "laboris nisi ut aliquip ex ea commodo consequat"
+    ];
+
+    const filteredContent = contentToSearch.filter(item => item.toLowerCase().includes(query));
+
+    if (filteredContent.length === 0) {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
+    } else {
+        filteredContent.forEach(item => {
+            const resultItem = document.createElement("p");
+            resultItem.textContent = item;
+            resultsContainer.appendChild(resultItem);
+        });
+    }
+}

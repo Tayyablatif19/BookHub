@@ -93,7 +93,7 @@ header {
 
 /* Add this CSS to your style.css file */
 .hero {
-    background-image: url('./blackhero.jpeg'); /* Replace 'hero-image.jpg' with your hero image path */
+    background-image: url('./seecs.jpeg'); /* Replace 'hero-image.jpg' with your hero image path */
     background-size: cover;
     background-position: center;
     color: #ff6600;
@@ -492,6 +492,7 @@ footer {
     font-size: 2rem;
     margin-top: 0;
     color: #dd5500;
+    
 }
 
 .book-card {
@@ -592,4 +593,50 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Search Section Styles */
+.search-section {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-section h1 {
+    font-size: 2rem;
+    margin: 10px;
+    color: #dd5500;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #dd5500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Search Results Styles */
+.search-results {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
 }

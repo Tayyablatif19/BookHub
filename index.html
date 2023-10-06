@@ -25,6 +25,9 @@
                 <li><a href="cs.html">Computer Science</a></li>
                 <li><a href="se.html">Software Engineering</a></li>
                 <li><a href="ds.html">Data Science</a></li>
+                <li><a href="electives.html">Electives</a></li>
+                <li><a href="solutionman.html">Solution Manuals</a></li>
+                
                 
             </ul>
 
@@ -35,7 +38,15 @@
         <div class="hero-content">
             <h1>Welcome to StudyBookHub</h1>
             <p>Your One Stop Source for Academic Excellence</p>
-            <a href="index.html" class="cta-button">Explore Books</a>
+            <section class="search-section">
+                <h1>Explore Books</h1>
+                <input type="text" id="search-input" placeholder="Search For Books or Solution Manuals">
+                <button onclick="searchContent()">Search</button>
+            </section>
+        
+            <section class="search-results">
+                <!-- Search results will be displayed here -->
+            </section>
         </div>
     </section>
 
